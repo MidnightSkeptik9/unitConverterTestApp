@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Unit Converter</title>
+	<script src="index.js"></script>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div id="main">
+		<div id="bar">
+			<h1>Unit Converter</h1>
+		</div>
+
+		<div id="category-container" class="container-element">
+			<div id="category-fields-container">
+				<h2>Choose a category</h2>
+				<select name="category" id="category-selector">
+					<option value="">Category</option>
+					<option value="length">Length</option>
+				</select>
+			</div>
+		</div>
+
+		<div id="unit-container" class="container-element">
+			<div id="unit-container-convert-from">
+				<h2>Convert from</h2>
+				<select name="from" id="from-selector">
+					<option value="">Choose a unit</option>
+					<option value="inches" class="visible">Inches</option>
+					<option value="feet" class="visible">Feet</option>
+					<option value="yards" class="visible">Yards</option>
+					<option value="miles" class="visible">Miles</option>
+				</select>
+			</div>
+
+			<div class="divider"></div>
+
+			<div id="unit-container-convert-to">
+				<h2>Convert to</h2>
+				<select name="to" id="to-selector">
+					<option value="">Choose a unit</option>
+					<option value="inches" class="visible">Inches</option>
+					<option value="feet" class="visible">Feet</option>
+					<option value="yards" class="visible">Yards</option>
+					<option value="miles" class="visible">Miles</option>
+				</select>
+			</div>
+		</div>
+
+		<div id="input-container" class="container-element">
+			<div id="input-field-container">
+				<input name="user-entry" id="user-entry" type="number" placeholder="Enter a value"></input>
+				<button type="submit" name="convert" id="convert-button">Convert</button>
+			</div>
+
+			<div class="divider"></div>
+
+			<div id="result-container">
+				<h2 id="result-label">Converted Value: </h2>
+			</div>
+		</div>
+
+		<div id="about-container" class="container-element">
+			<h1>About Unit Converter</h1>
+			<div class="divider"></div>
+			<h3>Developed by: <a href="https://github.com/MidnightSkeptik9">MidnightSkeptik9</a></h3>
+			<h2>Open Source code: <a href="https://github.com/MidnightSkeptik9">MidnightSkeptik9</a></h2>
+
+		</div>
+	</div>
+</body>
+</html>
